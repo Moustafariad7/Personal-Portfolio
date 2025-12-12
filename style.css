@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eaf5ea;
+  color: #1f2d1f;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 28px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  height: fit-content;
+  text-align: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #9ad39a;
+  display: grid;
+  place-items: center;
+  font-size: 64px;
+  color: #fff;
+  border: 8px solid #f3faf3;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #2d6a2d;
+  font-weight: 600;
+}
+
+.content h2 {
+  margin: 4px 0 18px;
+  font-size: 34px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 18px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.07);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card a {
+  color: #1a47ff;
+}
+
+.footer {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .page { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
+}
